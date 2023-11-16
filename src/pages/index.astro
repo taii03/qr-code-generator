@@ -1,0 +1,15 @@
+---
+import Layout from '@/layouts/layout.astro';
+
+import { QRCodeGenerator } from '@/components/qr-code-generator';
+import BgIllustration from '@/components/bg-illustration.astro';
+---
+
+<Layout title="QR Code Generator">
+	<div class="flex justify-center items-center w-full h-screen">
+		<QRCodeGenerator client:load />
+	</div>
+	<div class="absolute top-10 right-20 -z-10">
+		<BgIllustration />
+	</div>
+</Layout>
